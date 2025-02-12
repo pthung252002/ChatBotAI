@@ -1,0 +1,234 @@
+version: "3.1"
+
+stories:
+# ========== EB ==========
+- story: EB Người dùng hỏi về thông tin trước
+  steps:
+    - intent: BenhEB
+    - action: EB_action_CungCap_ThongTin
+    - slot_was_set:
+        - current_topic: "bệnh sương mai sớm trên cây cà chua"
+
+- story: EB Người dùng hỏi nguyên nhân trước
+  steps:
+    - intent: NguyenNhanEB
+    - action: EB_action_CungCap_NguyenNhan
+    - slot_was_set:
+        - current_topic: "bệnh sương mai sớm trên cây cà chua"
+   
+- story: EB Người dùng hỏi triệu chứng trước
+  steps:
+    - intent: TrieuChungEB
+    - action: EB_action_CungCap_TrieuChung
+    - slot_was_set:
+        - current_topic: "bệnh sương mai sớm trên cây cà chua"
+        
+- story: EB Người dùng hỏi phòng ngừa trước
+  steps:
+    - intent: PhongNguaEB
+    - action: EB_action_CungCap_PhongNgua
+    - slot_was_set:
+        - current_topic: "bệnh sương mai sớm trên cây cà chua"
+
+# ========== LB ==========
+- story: LB Người dùng hỏi về thông tin trước
+  steps:
+    - intent: BenhLB
+    - action: LB_action_CungCap_ThongTin
+    - slot_was_set:
+        - current_topic: "bệnh sương mai muộn trên cây cà chua"
+
+- story: LB Người dùng hỏi nguyên nhân trước
+  steps:
+    - intent: NguyenNhanLB
+    - action: LB_action_CungCap_NguyenNhan
+    - slot_was_set:
+        - current_topic: "bệnh sương mai muộn trên cây cà chua"
+   
+- story: LB Người dùng hỏi triệu chứng trước
+  steps:
+    - intent: TrieuChungLB
+    - action: LB_action_CungCap_TrieuChung
+    - slot_was_set:
+        - current_topic: "bệnh sương mai muộn trên cây cà chua"
+        
+- story: LB Người dùng hỏi phòng ngừa trước
+  steps:
+    - intent: PhongNguaLB
+    - action: LB_action_CungCap_PhongNgua
+    - slot_was_set:
+        - current_topic: "bệnh sương mai muộn trên cây cà chua"
+        
+# ========== LM ==========
+- story: LM Người dùng hỏi về thông tin trước
+  steps:
+    - intent: BenhLM
+    - action: LM_action_CungCap_ThongTin
+    - slot_was_set:
+        - current_topic: "bệnh sâu vẽ bùa trên cây cà chua"
+
+- story: LM Người dùng hỏi nguyên nhân trước
+  steps:
+    - intent: NguyenNhanLM
+    - action: LM_action_CungCap_NguyenNhan
+    - slot_was_set:
+        - current_topic: "bệnh sâu vẽ bùa trên cây cà chua"
+   
+- story: LM Người dùng hỏi triệu chứng trước
+  steps:
+    - intent: TrieuChungLM
+    - action: LM_action_CungCap_TrieuChung
+    - slot_was_set:
+        - current_topic: "bệnh sâu vẽ bùa trên cây cà chua"
+        
+- story: LM Người dùng hỏi phòng ngừa trước
+  steps:
+    - intent: PhongNguaLM
+    - action: LM_action_CungCap_PhongNgua
+    - slot_was_set:
+        - current_topic: "bệnh sâu vẽ bùa trên cây cà chua"
+        
+# ========== LMold ==========
+- story: LMold Người dùng hỏi về thông tin trước
+  steps:
+    - intent: BenhLMold
+    - action: LMold_action_CungCap_ThongTin
+    - slot_was_set:
+        - current_topic: "bệnh mốc lá trên cây cà chua"
+
+- story: LMold Người dùng hỏi nguyên nhân trước
+  steps:
+    - intent: NguyenNhanLMold
+    - action: LMold_action_CungCap_NguyenNhan
+    - slot_was_set:
+        - current_topic: "bệnh mốc lá trên cây cà chua"
+   
+- story: LMold Người dùng hỏi triệu chứng trước
+  steps:
+    - intent: TrieuChungLMold
+    - action: LMold_action_CungCap_TrieuChung
+    - slot_was_set:
+        - current_topic: "bệnh mốc lá trên cây cà chua"
+        
+- story: LMold Người dùng hỏi phòng ngừa trước
+  steps:
+    - intent: PhongNguaLMold
+    - action: LMold_action_CungCap_PhongNgua
+    - slot_was_set:
+        - current_topic: "bệnh mốc lá trên cây cà chua"
+        
+# ========== MV ==========
+- story: MV Người dùng hỏi về thông tin trước
+  steps:
+    - intent: BenhMV
+    - action: MV_action_CungCap_ThongTin
+    - slot_was_set:
+        - current_topic: "bệnh virus khảm trên cây cà chua"
+
+- story: MV Người dùng hỏi nguyên nhân trước
+  steps:
+    - intent: NguyenNhanMV
+    - action: MV_action_CungCap_NguyenNhan
+    - slot_was_set:
+        - current_topic: "bệnh virus khảm trên cây cà chua"
+   
+- story: MV Người dùng hỏi triệu chứng trước
+  steps:
+    - intent: TrieuChungMV
+    - action: MV_action_CungCap_TrieuChung
+    - slot_was_set:
+        - current_topic: "bệnh virus khảm trên cây cà chua"
+        
+- story: MV Người dùng hỏi phòng ngừa trước
+  steps:
+    - intent: PhongNguaMV
+    - action: MV_action_CungCap_PhongNgua
+    - slot_was_set:
+        - current_topic: "bệnh virus khảm trên cây cà chua"
+        
+# ========== Sep ==========
+- story: Sep Người dùng hỏi về thông tin trước
+  steps:
+    - intent: BenhSep
+    - action: Sep_action_CungCap_ThongTin
+    - slot_was_set:
+        - current_topic: "bệnh đốm lá Septoria trên cây cà chua"
+
+- story: Sep Người dùng hỏi nguyên nhân trước
+  steps:
+    - intent: NguyenNhanSep
+    - action: Sep_action_CungCap_NguyenNhan
+    - slot_was_set:
+        - current_topic: "bệnh đốm lá Septoria trên cây cà chua"
+   
+- story: Sep Người dùng hỏi triệu chứng trước
+  steps:
+    - intent: TrieuChungSep
+    - action: Sep_action_CungCap_TrieuChung
+    - slot_was_set:
+        - current_topic: "bệnh đốm lá Septoria trên cây cà chua"
+        
+- story: Sep Người dùng hỏi phòng ngừa trước
+  steps:
+    - intent: PhongNguaSep
+    - action: Sep_action_CungCap_PhongNgua
+    - slot_was_set:
+        - current_topic: "bệnh đốm lá Septoria trên cây cà chua"
+        
+# ========== SM ==========
+- story: SM Người dùng hỏi về thông tin trước
+  steps:
+    - intent: BenhSM
+    - action: SM_action_CungCap_ThongTin
+    - slot_was_set:
+        - current_topic: "bệnh nhện đỏ trên cây cà chua"
+
+- story: SM Người dùng hỏi nguyên nhân trước
+  steps:
+    - intent: NguyenNhanSM
+    - action: SM_action_CungCap_NguyenNhan
+    - slot_was_set:
+        - current_topic: "bệnh nhện đỏ trên cây cà chua"
+   
+- story: SM Người dùng hỏi triệu chứng trước
+  steps:
+    - intent: TrieuChungSM
+    - action: SM_action_CungCap_TrieuChung
+    - slot_was_set:
+        - current_topic: "bệnh nhện đỏ trên cây cà chua"
+        
+- story: SM Người dùng hỏi phòng ngừa trước
+  steps:
+    - intent: PhongNguaSM
+    - action: SM_action_CungCap_PhongNgua
+    - slot_was_set:
+        - current_topic: "bệnh nhện đỏ trên cây cà chua"
+        
+# ========== CV ==========
+- story: CV Người dùng hỏi về thông tin trước
+  steps:
+    - intent: BenhCV
+    - action: CV_action_CungCap_ThongTin
+    - slot_was_set:
+        - current_topic: "bệnh xoăn vàng lá do virus trên cây cà chua"
+
+- story: CV Người dùng hỏi nguyên nhân trước
+  steps:
+    - intent: NguyenNhanCV
+    - action: CV_action_CungCap_NguyenNhan
+    - slot_was_set:
+        - current_topic: "bệnh xoăn vàng lá do virus trên cây cà chua"
+   
+- story: CV Người dùng hỏi triệu chứng trước
+  steps:
+    - intent: TrieuChungCV
+    - action: CV_action_CungCap_TrieuChung
+    - slot_was_set:
+        - current_topic: "bệnh xoăn vàng lá do virus trên cây cà chua"
+        
+- story: CV Người dùng hỏi phòng ngừa trước
+  steps:
+    - intent: PhongNguaCV
+    - action: CV_action_CungCap_PhongNgua
+    - slot_was_set:
+        - current_topic: "bệnh xoăn vàng lá do virus trên cây cà chua"

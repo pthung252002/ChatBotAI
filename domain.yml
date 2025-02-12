@@ -1,0 +1,103 @@
+version: "3.1"
+
+intents:
+  - ChaoHoi
+  - Bye
+  - CamOn
+  - BenhEB
+  - BenhLB
+  - BenhLM
+  - BenhLMold
+  - BenhMV
+  - BenhSep
+  - BenhSM
+  - BenhCV
+  - NguyenNhanEB
+  - NguyenNhanLB
+  - NguyenNhanLM
+  - NguyenNhanLMold
+  - NguyenNhanMV
+  - NguyenNhanSep
+  - NguyenNhanSM
+  - NguyenNhanCV
+  - TrieuChungEB
+  - TrieuChungLB
+  - TrieuChungLM
+  - TrieuChungLMold
+  - TrieuChungMV
+  - TrieuChungSep
+  - TrieuChungSM
+  - TrieuChungCV
+  - PhongNguaEB
+  - PhongNguaLB
+  - PhongNguaLM
+  - PhongNguaLMold
+  - PhongNguaMV
+  - PhongNguaSep
+  - PhongNguaSM
+  - PhongNguaCV
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+slots:
+  current_topic:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+
+actions:
+  - EB_action_CungCap_ThongTin
+  - EB_action_CungCap_NguyenNhan
+  - EB_action_CungCap_TrieuChung
+  - EB_action_CungCap_PhongNgua
+  - LB_action_CungCap_ThongTin
+  - LB_action_CungCap_NguyenNhan
+  - LB_action_CungCap_TrieuChung
+  - LB_action_CungCap_PhongNgua
+  - LM_action_CungCap_ThongTin
+  - LM_action_CungCap_NguyenNhan
+  - LM_action_CungCap_TrieuChung
+  - LM_action_CungCap_PhongNgua
+  - LMold_action_CungCap_ThongTin
+  - LMold_action_CungCap_NguyenNhan
+  - LMold_action_CungCap_TrieuChung
+  - LMold_action_CungCap_PhongNgua
+  - MV_action_CungCap_ThongTin
+  - MV_action_CungCap_NguyenNhan
+  - MV_action_CungCap_TrieuChung
+  - MV_action_CungCap_PhongNgua
+  - Sep_action_CungCap_ThongTin
+  - Sep_action_CungCap_NguyenNhan
+  - Sep_action_CungCap_TrieuChung
+  - Sep_action_CungCap_PhongNgua
+  - SM_action_CungCap_ThongTin
+  - SM_action_CungCap_NguyenNhan
+  - SM_action_CungCap_TrieuChung
+  - SM_action_CungCap_PhongNgua
+  - CV_action_CungCap_ThongTin
+  - CV_action_CungCap_NguyenNhan
+  - CV_action_CungCap_TrieuChung
+  - CV_action_CungCap_PhongNgua
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
