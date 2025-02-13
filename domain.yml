@@ -38,24 +38,26 @@ intents:
   - PhongNguaCV
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
+  utter_Hoi_ThongTin:
+  - text: "Bạn muốn biết về bệnh gì?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_Hoi_NguyenNhan:
+  - text: "Bạn muốn biết tác nhân của bệnh nào?"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_Hoi_TrieuChung:
+  - text: "Bạn muốn biết triệu chứng của bệnh nào?"
 
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_Hoi_TrieuChung:
+  - text: "Bạn muốn biết cách phòng ngừa bệnh nào?"
+  
+    utter_ChaoHoi:
+  - text: "Xin chào bạn!"
+  
+    utter_Bye:
+  - text: "Tạm biệt bạn nhé!"
+  
+    utter_CamOn:
+  - text: "Không có gì đâu, nếu bạn thắc mắc gì thì đừng ngại hỏi mình nhé!"
   
 slots:
   current_topic:

@@ -2,12 +2,281 @@ version: "3.1"
 
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: Chào hỏi
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
-
-- rule: Say 'I am a bot' anytime the user challenges
+    - intent: ChaoHoi
+    - action: utter_ChaoHoi
+    
+- rule: Tạm biệt
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+    - intent: Bye
+    - action: utter_Bye
+    
+- rule: Cảm ơn
+  steps:
+    - intent: CamOn
+    - action: utter_CamOn
+    
+# ========== EB ==========
+- rule: EB Trả lời thông tin nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: BenhEB
+    - action: EB_action_CungCap_ThongTin
+	
+- rule: EB Trả lời nguyên nhân nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: NguyenNhanEB
+    - action: EB_action_CungCap_NguyenNhan
+	
+- rule: EB Trả lời triệu chứng nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: TrieuChungEB
+    - action: EB_action_CungCap_TrieuChung
+	
+- rule: EB Trả lời phòng ngừa nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: PhongNguaEB
+    - action: EB_action_CungCap_PhongNgua
+    
+# ========== LB ==========
+- rule: LB Trả lời thông tin nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: BenhLB
+    - action: LB_action_CungCap_ThongTin
+	
+- rule: LB Trả lời nguyên nhân nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: NguyenNhanLB
+    - action: LB_action_CungCap_NguyenNhan
+	
+- rule: LB Trả lời triệu chứng nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: TrieuChungLB
+    - action: LB_action_CungCap_TrieuChung
+	
+- rule: LB Trả lời phòng ngừa nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: PhongNguaLB
+    - action: LB_action_CungCap_PhongNgua
+    
+# ========== LM ==========
+- rule: LM Trả lời thông tin nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: BenhLM
+    - action: LM_action_CungCap_ThongTin
+	
+- rule: LM Trả lời nguyên nhân nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: NguyenNhanLM
+    - action: LM_action_CungCap_NguyenNhan
+	
+- rule: LM Trả lời triệu chứng nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: TrieuChungLM
+    - action: LM_action_CungCap_TrieuChung
+	
+- rule: LM Trả lời phòng ngừa nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: PhongNguaLM
+    - action: LM_action_CungCap_PhongNgua
+    
+# ========== LMold ==========
+- rule: LMold Trả lời thông tin nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: BenhLMold
+    - action: LMold_action_CungCap_ThongTin
+	
+- rule: LMold Trả lời nguyên nhân nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: NguyenNhanLMold
+    - action: LMold_action_CungCap_NguyenNhan
+	
+- rule: LMold Trả lời triệu chứng nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: TrieuChungLMold
+    - action: LMold_action_CungCap_TrieuChung
+	
+- rule: LMold Trả lời phòng ngừa nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: PhongNguaLMold
+    - action: LMold_action_CungCap_PhongNgua
+    
+# ========== MV ==========
+- rule: MV Trả lời thông tin nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: BenhMV
+    - action: MV_action_CungCap_ThongTin
+	
+- rule: MV Trả lời nguyên nhân nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: NguyenNhanMV
+    - action: MV_action_CungCap_NguyenNhan
+	
+- rule: MV Trả lời triệu chứng nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: TrieuChungMV
+    - action: MV_action_CungCap_TrieuChung
+	
+- rule: MV Trả lời phòng ngừa nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: PhongNguaMV
+    - action: MV_action_CungCap_PhongNgua
+    
+# ========== Sep ==========
+- rule: Sep Trả lời thông tin nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: BenhSep
+    - action: Sep_action_CungCap_ThongTin
+	
+- rule: Sep Trả lời nguyên nhân nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: NguyenNhanSep
+    - action: Sep_action_CungCap_NguyenNhan
+	
+- rule: Sep Trả lời triệu chứng nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: TrieuChungSep
+    - action: Sep_action_CungCap_TrieuChung
+	
+- rule: Sep Trả lời phòng ngừa nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: PhongNguaSep
+    - action: Sep_action_CungCap_PhongNgua
+  
+# ========== SM ==========
+- rule: SM Trả lời thông tin nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: BenhSM
+    - action: SM_action_CungCap_ThongTin
+	
+- rule: SM Trả lời nguyên nhân nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: NguyenNhanSM
+    - action: SM_action_CungCap_NguyenNhan
+	
+- rule: SM Trả lời triệu chứng nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: TrieuChungSM
+    - action: SM_action_CungCap_TrieuChung
+	
+- rule: SM Trả lời phòng ngừa nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: PhongNguaSM
+    - action: SM_action_CungCap_PhongNgua
+    
+# ========== CV ==========
+- rule: CV Trả lời thông tin nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: BenhCV
+    - action: CV_action_CungCap_ThongTin
+	
+- rule: CV Trả lời nguyên nhân nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: NguyenNhanCV
+    - action: CV_action_CungCap_NguyenNhan
+	
+- rule: CV Trả lời triệu chứng nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: TrieuChungCV
+    - action: CV_action_CungCap_TrieuChung
+	
+- rule: CV Trả lời phòng ngừa nếu đã có chủ đề
+  condition:
+    - slot_was_set:
+        - current_topic
+  steps:
+    - intent: PhongNguaCV
+    - action: CV_action_CungCap_PhongNgua
