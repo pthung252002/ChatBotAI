@@ -50,13 +50,13 @@ responses:
   utter_Hoi_PhongNgua:
   - text: "Bạn muốn biết cách phòng ngừa bệnh nào?"
   
-    utter_ChaoHoi:
+  utter_ChaoHoi:
   - text: "Xin chào bạn!"
   
-    utter_Bye:
+  utter_Bye:
   - text: "Tạm biệt bạn nhé!"
   
-    utter_CamOn:
+  utter_CamOn:
   - text: "Không có gì đâu, nếu bạn thắc mắc gì thì đừng ngại hỏi mình nhé!"
   
 slots:
