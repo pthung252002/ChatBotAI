@@ -47,7 +47,7 @@ responses:
   utter_Hoi_TrieuChung:
   - text: "Bạn muốn biết triệu chứng của bệnh nào?"
 
-  utter_Hoi_TrieuChung:
+  utter_Hoi_PhongNgua:
   - text: "Bạn muốn biết cách phòng ngừa bệnh nào?"
   
     utter_ChaoHoi:
